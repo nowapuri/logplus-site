@@ -191,7 +191,9 @@ a:focus-visible {
 /* --- privacy page --- */
 
 .doc {
-  padding: 48px 0 64px;
+  /* paddingの一括指定だと.wrapの左右paddingを上書きしてしまうため、上下だけ指定する */
+  padding-top: 48px;
+  padding-bottom: 64px;
 }
 
 .doc h1 {
